@@ -9,7 +9,7 @@
     "start": "next start"
   },
   "engines": {
-    "node": "18.x",
+    "node": "22.x",
     "npm": "10.x"
   },
   "dependencies": {
@@ -80,7 +80,7 @@
   "devDependencies": {
     "@types/canvas-confetti": "^1.9.0",
     "@types/mongoose": "^5.11.96",
-    "@types/node": "^18.19.0",
+    "@types/node": "^22.7.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/react-scroll": "^1.8.10",
