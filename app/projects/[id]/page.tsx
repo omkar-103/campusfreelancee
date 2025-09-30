@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react'
 import { useParams } from 'next/navigation'
-import { useAuth } from '@/contexts/AuthContext'
+import { useAuth } from '@/contexts/auth-context'
 import ApplicationModal from '@/components/ApplicationModal'
 import { Button } from '@/components/ui/button'
 import { toast } from 'sonner'
