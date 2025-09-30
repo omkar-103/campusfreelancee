@@ -8,6 +8,10 @@
     "lint": "next lint",
     "start": "next start"
   },
+  "engines": {
+    "node": "18.x",
+    "npm": "10.x"
+  },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-accordion": "1.2.2",
@@ -76,7 +80,7 @@
   "devDependencies": {
     "@types/canvas-confetti": "^1.9.0",
     "@types/mongoose": "^5.11.96",
-    "@types/node": "^22",
+    "@types/node": "^18.19.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/react-scroll": "^1.8.10",
