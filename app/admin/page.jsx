@@ -519,7 +519,7 @@ const SuperAdminDashboard = () => {
 
               <div className="relative rounded-2xl border border-blue-500/15 bg-blue-500/8 p-4 text-center text-xs text-blue-200">
                 <div className="absolute inset-x-12 -top-[1px] h-px bg-gradient-to-r from-transparent via-blue-300 to-transparent opacity-60" />
-                <p>Demo credentials: snehaop@gmail.com / password</p>
+                <p>Admin Credentials: snehaop@gmail.com / password</p>
               </div>
             </div>
           </div>
