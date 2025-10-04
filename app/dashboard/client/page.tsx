@@ -1,4 +1,6 @@
 // app/dashboard/client/page.tsx
+
+// This is client page
 "use client"
 import { useState, useEffect } from "react"
 import { useAuth } from "@/contexts/auth-context"
