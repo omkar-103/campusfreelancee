@@ -33,6 +33,7 @@ import {
   Moon,
   FolderOpen,
   LayoutDashboard,
+  Shield,
 } from "lucide-react"
 import Link from "next/link"
 
@@ -267,12 +268,28 @@ export function Navbar({ onAuthClick, isAuthenticated, userType }: NavbarProps) 
                 >
                   Login
                 </Button>
+
+              
+
                 <Button
                   onClick={() => onAuthClick("signup")}
                   className="bg-gradient-to-r from-[#5F4B8B] to-[#3700B3] hover:from-[#3700B3] hover:to-[#5F4B8B] text-white rounded-full px-6 shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Get Started
                 </Button>
+
+                  {/* Admin Button - Frontend Only */}
+                <Button
+                  variant="outline"
+                  onClick={() => router.push('/admin')}
+                  className="border-[#FF6B6B] dark:border-[#FF6B6B] text-[#FF6B6B] dark:text-[#FF6B6B] hover:bg-[#FF6B6B]/10 dark:hover:bg-[#FF6B6B]/10 flex items-center gap-1"
+                >
+                  <Shield className="h-4 w-4" />
+                  Admin
+                  <span className="ml-1 text-xs px-1.5 py-0.5 bg-[#FF6B6B]/20 text-[#FF6B6B] rounded-full">Frontend</span>
+                </Button>
+
+
               </>
             )}
           </div>
@@ -404,6 +421,8 @@ export function Navbar({ onAuthClick, isAuthenticated, userType }: NavbarProps) 
                     >
                       Login
                     </Button>
+
+
                     <Button
                       onClick={() => {
                         onAuthClick("signup")
@@ -413,6 +432,24 @@ export function Navbar({ onAuthClick, isAuthenticated, userType }: NavbarProps) 
                     >
                       Get Started
                     </Button>
+
+
+                    
+                    {/* Admin Button - Mobile */}
+                    <Button
+                      onClick={() => {
+                        router.push('/admin')
+                        setIsMobileMenuOpen(false)
+                      }}
+                      variant="outline"
+                      className="w-full border-[#FF6B6B] dark:border-[#FF6B6B] text-[#FF6B6B] dark:text-[#FF6B6B] flex items-center gap-1"
+                    >
+                      <Shield className="h-4 w-4" />
+                      Admin
+                      <span className="ml-1 text-xs px-1.5 py-0.5 bg-[#FF6B6B]/20 text-[#FF6B6B] rounded-full">Frontend</span>
+                    </Button>
+
+
                   </div>
                 )}
               </div>
